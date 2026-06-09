@@ -114,10 +114,15 @@ components/
 This folder contains reusable UI components used throughout the application.
 
 Board.jsx – Responsible for rendering the main Kanban board layout and managing all columns.
+
 Column.jsx – Represents an individual Kanban column such as Backlog, In Progress, and Done.
+
 SearchBar.jsx – Provides functionality to search and filter tasks by title or description.
+
 TaskCard.jsx – Displays individual task information in card format.
+
 TaskForm.jsx – Handles task creation and editing functionality through a form.
+
 TaskModal.jsx – Displays detailed task information inside a modal popup.
 
  redux/
@@ -125,6 +130,7 @@ TaskModal.jsx – Displays detailed task information inside a modal popup.
 This folder contains Redux Toolkit configuration and application state management logic.
 
 store.js – Configures and manages the Redux store for the application.
+
 taskSlice.js – Contains reducers and actions for managing task-related operations.
 
 App.jsx
