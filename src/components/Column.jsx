@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import { Droppable } from "@hello-pangea/dnd";
 import { Plus, X } from "lucide-react";
@@ -10,6 +10,17 @@ const Column = ({ title, status }) => {
   const [showForm, setShowForm] = useState(false);
 
   const { tasks, searchTerm } = useSelector((state) => state.task);
+
+  useEffect(() => {
+    if (showForm) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [showForm]);
 
   const totalTasks = tasks.filter((task) => task.status === status).length;
 
