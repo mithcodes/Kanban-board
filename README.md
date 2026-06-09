@@ -107,22 +107,34 @@ uuid
 --------------------------------------------------------------------------------------------------------
 
 
-Project Structure
-src
-│── components
-│   ├── Board.jsx
-│   ├── Column.jsx
-│   ├── SearchBar.jsx
-│   ├── TaskCard.jsx
-│   ├── TaskForm.jsx
-│   └── TaskModal.jsx
-│
-│── redux
-│   ├── store.js
-│   └── taskSlice.js
-│
-│── App.jsx
-│── main.jsx
+Folder Description
+
+components/
+
+This folder contains reusable UI components used throughout the application.
+
+Board.jsx – Responsible for rendering the main Kanban board layout and managing all columns.
+Column.jsx – Represents an individual Kanban column such as Backlog, In Progress, and Done.
+SearchBar.jsx – Provides functionality to search and filter tasks by title or description.
+TaskCard.jsx – Displays individual task information in card format.
+TaskForm.jsx – Handles task creation and editing functionality through a form.
+TaskModal.jsx – Displays detailed task information inside a modal popup.
+
+ redux/
+
+This folder contains Redux Toolkit configuration and application state management logic.
+
+store.js – Configures and manages the Redux store for the application.
+taskSlice.js – Contains reducers and actions for managing task-related operations.
+
+App.jsx
+
+The main application component responsible for rendering the complete application layout.
+
+main.jsx
+
+The entry point of the React application where the app is initialized and rendered.
+
 
 -------------------------------------------------------------------------------------------------------
 
